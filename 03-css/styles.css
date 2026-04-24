@@ -1,1 +1,24 @@
 /* Add your CSS code here  */
+:root {
+  --ice-blue-juvie: #8fbcd4;
+  --gothic-gray-blue: #6f8796;
+  --dark-slate-infinity: #1f2a33;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+h1,
+h2,
+nav a {
+  font-family: "Cinzel";
+}
+/* table */
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 6px;
+  border: 1px solid black;
+}
