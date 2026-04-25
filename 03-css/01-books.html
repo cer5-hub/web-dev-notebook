@@ -13,16 +13,18 @@
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a class="nav-link font-cinzel" ref="#books">ASOIAF Books</a></li>
-          <li>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link font-cinzel" href="#books">ASOIAF Books</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link font-cinzel" href="#covers"
               >First Edition Covers</a
             >
           </li>
 
-          <li>
+          <li class="nav-item">
             <a class="nav-link font-cinzel" href="#table"
               >Table of POV Characters</a
             >
@@ -30,11 +32,13 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <h1 class="font-cinzel">A Song of Ice and Fire - George R.R Martin</h1>
-      <section id="books">
-        <h2 class="font-cinzel">Song of Ice and Fire universe</h2>
-        <ul>
+    <main class="books-container">
+      <h1 class="main-heading font-cinzel">
+        A Song of Ice and Fire - George R.R Martin
+      </h1>
+      <section id="books" class="section">
+        <h2 class="h2 font-cinzel">ASOIAF Books</h2>
+        <ul class="books-list">
           <li>A Song of Ice and Fire series</li>
           <ol>
             <li>A Game of Thrones(1996)</li>
@@ -52,44 +56,49 @@
           <li>Fire and Blood(2018)</li>
         </ul>
       </section>
-      <section id="covers">
+      <section id="covers" class="covers section">
         <h2 class="font-cinzel">First Edition Covers</h2>
-        <img
-          src="https://upload.wikimedia.org/wikipedia/en/9/93/AGameOfThrones.jpg"
-          alt="Cover of the game of thrones book"
-          width="190"
-          height="300"
-        />
-        <img
-          src="https://upload.wikimedia.org/wikipedia/en/3/39/AClashOfKings.jpg"
-          alt="Clash of kings book cover"
-          width="190"
-          height="300"
-        />
-        <img
-          src="https://upload.wikimedia.org/wikipedia/en/2/24/AStormOfSwords.jpg"
-          alt=" A stroms of swords book cover"
-          width="190"
-          height="300"
-        />
+        <div class="images-container">
+          <img
+            class="book-image"
+            src="https://upload.wikimedia.org/wikipedia/en/9/93/AGameOfThrones.jpg"
+            alt="Cover of the game of thrones book"
+            width="190"
+            height="300"
+          />
+          <img
+            class="book-image"
+            src="https://upload.wikimedia.org/wikipedia/en/3/39/AClashOfKings.jpg"
+            alt="Clash of kings book cover"
+            width="190"
+            height="300"
+          />
+          <img
+            class="book-image"
+            src="https://upload.wikimedia.org/wikipedia/en/2/24/AStormOfSwords.jpg"
+            alt=" A stroms of swords book cover"
+            width="190"
+            height="300"
+          />
+        </div>
       </section>
-      <section id="table">
+      <section id="table" class="section">
         <h2 class="font-cinzel">
           POV Character with the Most Chapters in Each Book
         </h2>
-        <table>
+        <table class="table">
           <thead>
             <tr>
-              <th rowspan="2">POV Character</th>
-              <th colspan="5">Books</th>
-              <th rowspan="2">Total Chapters</th>
+              <th class="table-heading" rowspan="2">POV Character</th>
+              <th class="table-heading" colspan="5">Books</th>
+              <th class="table-heading" rowspan="2">Total Chapters</th>
             </tr>
             <tr>
-              <th>A Game of Thrones</th>
-              <th>A Clash of Kings</th>
-              <th>A storm of Swords</th>
-              <th>A Feast for Crows</th>
-              <th>A Dance with Dragons</th>
+              <th class="table-heading">A Game of Thrones</th>
+              <th class="table-heading">A Clash of Kings</th>
+              <th class="table-heading">A storm of Swords</th>
+              <th class="table-heading">A Feast for Crows</th>
+              <th class="table-heading">A Dance with Dragons</th>
             </tr>
           </thead>
           <tbody>
@@ -134,11 +143,9 @@
               <td>42</td>
             </tr>
           </tbody>
-          <tfoot>
+          <tfoot class="table-footer">
             <tr>
-              <td colspan="6">
-                <strong>Total POV Chapters (Displayed)</strong>
-              </td>
+              <td colspan="6">Total POV Chapters (Displayed)</td>
               <td>147</td>
             </tr>
           </tfoot>

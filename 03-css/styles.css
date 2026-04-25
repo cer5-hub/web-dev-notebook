@@ -1,24 +1,185 @@
 /* Add your CSS code here  */
 :root {
+  --background-color: #f7f7f7;
+  --text-color: #333333;
   --ice-blue-juvie: #8fbcd4;
   --gothic-gray-blue: #6f8796;
   --dark-slate-infinity: #1f2a33;
+  --gray-border: #cccccc;
+  --table-background: #fafafa;
+  --table-emphasis-background: #eceaea;
+  --form-white: #fefefe;
+  --midnight-blue: #161678;
+  --midnight-blue-dark: #0b0b40;
+}
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
 }
 body {
+  background-color: var(--background-color);
   font-family: Arial, sans-serif;
+  margin: 0;
+  color: var(--text-color);
+  line-height: 1.6;
 }
-h1,
-h2,
-nav a {
+
+/* navigation styles */
+.nav {
+  background-color: var(--dark-slate-infinity);
+  color: var(--ice-blue-juvie);
+}
+.nav-list {
+  margin: 0;
+  padding: 1rem;
+  padding-left: 0;
+  text-align: center;
+  list-style: none;
+}
+.nav-link {
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--ice-blue-juvie);
+  transition: background 0.2s, color 0.2s;
+}
+.nav-item {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.nav-link:hover {
+  background-color: var(--ice-blue-juvie);
+  color: var(--dark-slate-infinity);
+}
+
+/* main styles */
+.main-heading {
+  margin: 2rem;
+  text-align: center;
+  color: var(--gothic-gray-blue);
+}
+.section {
+  margin-top: 2rem;
+}
+.books-container {
+  width: 800px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 0 1rem;
+}
+
+.font-cinzel {
   font-family: "Cinzel";
 }
+
+/* section styles */
+.h2 {
+  border-bottom: 2px solid var(--gray-border);
+}
+
+/* images styles */
+.images-container {
+  margin-top: 0.4rem;
+}
+
+.book-image {
+  border-radius: 5px;
+  transition: transform 0.2s ease;
+}
+.book-image:hover {
+  transform: scale(1.1);
+}
+/* book list styles */
+.books-lists li {
+  margin-bottom: 0.5rem;
+}
+.books-lists li > ol {
+  margin-top: 0.4rem;
+}
+
 /* table */
-table {
-  border: 1px solid black;
+.table {
   border-collapse: collapse;
 }
-table td,
-table th {
-  padding: 6px;
-  border: 1px solid black;
+
+.table th,
+.table td {
+  border: 1px solid var(--gray-border);
+  padding: 0.5rem;
+  text-align: center;
+}
+.table tr:nth-child(even) {
+  background-color: var(--table-background);
+}
+
+.table-heading {
+  background-color: var(--table-emphasis-background);
+}
+.table-footer td {
+  font-weight: bold;
+  background-color: var(--table-emphasis-background);
+}
+
+/* Form - IRA ROTH CALCULATOR */
+
+.form-container {
+  margin: 100px auto;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 420px;
+  background-color: var(--form-white);
+}
+
+.color-bg-blue {
+  background-color: var(--midnight-blue-dark);
+}
+.main-heading-form {
+  text-align: center;
+  color: var(--midnight-blue);
+}
+.form-element {
+  margin-bottom: 0.5rem;
+}
+.form-label {
+  display: inline-block;
+  width: 48%;
+}
+.form-element:last-of-type {
+  margin: 2rem 0;
+}
+
+.form-input {
+  display: inline-block;
+  width: 49;
+  border: 1px solid var(--gray-border);
+  border-radius: 6px;
+  padding: 0.5rem;
+}
+
+.form-radios {
+  margin-left: 40px;
+  margin-bottom: 0.75rem;
+}
+.btn {
+  display: inline-block;
+  width: 49%;
+  padding: 0.65rem 1rem;
+  border-radius: 6px;
+}
+.btn-submit {
+  background-color: var(--midnight-blue);
+  color: var(--form-white);
+}
+
+.btn-submit:hover {
+  background-color: var(--midnight-blue-dark);
+}
+.form-note {
+  font-size: 0.8rem;
+}
+.form-note a {
+  color: var(--midnight-blue);
 }
